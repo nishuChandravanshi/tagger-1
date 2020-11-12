@@ -123,6 +123,9 @@ assert not parameters['all_emb'] or parameters['pre_emb']
 assert not parameters['pre_emb'] or parameters['word_dim'] > 0
 assert not parameters['pre_emb'] or os.path.isfile(parameters['pre_emb'])
 
+#print eval_script
+eval_script = 'tagger/'+eval_script[1:]
+
 # Check evaluation script / folders
 if not os.path.isfile(eval_script):
     raise Exception('CoNLL evaluation script not found at "%s"' % eval_script)
