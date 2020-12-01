@@ -33,9 +33,9 @@ optparser.add_option(
 )
 opts = optparser.parse_args()[0]
 
-opts.model = "tagger/"+opts.model
-opts.input = "tagger/"+opts.input
-opts.output = "tagger/"+opts.output
+opts.model = "tagger-1/"+opts.model
+opts.input = "tagger-1/"+opts.input
+opts.output = "tagger-1/"+opts.output
 
 # Check parameters validity
 assert opts.delimiter
